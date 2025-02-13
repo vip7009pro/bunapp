@@ -4,6 +4,13 @@ import { AgGridReact } from 'ag-grid-react';
 import { IconButton } from '@mui/material';
 import { AiFillFileExcel } from 'react-icons/ai';
 import { SaveExcel } from '../../api/GlobalFunction';
+import { AllCommunityModule, ModuleRegistry, provideGlobalGridOptions } from 'ag-grid-community';
+
+// Register all community features
+ModuleRegistry.registerModules([AllCommunityModule]);
+
+// Mark all grids as using legacy themes
+provideGlobalGridOptions({ theme: "legacy"});
 interface AGInterface {
   data: Array<any>,
   columns: Array<any>,

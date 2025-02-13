@@ -20,12 +20,14 @@
         .animated_div {
           display: flex;
           flex-direction: column;
+          width: 100%;
           .component_element {
             position: absolute;
             /* top: 35px; */
             top: 25px;
             display: flex;
             justify-content: center;
+            width: 100%;
           }
         }
       }

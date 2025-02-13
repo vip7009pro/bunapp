@@ -1052,6 +1052,7 @@ function Home() {
         {/* <div className='sidebardiv'>
           <Sidebar />
         </div> */}
+        <div className="animated_div">
         <div className='outletdiv'>         
             {tabModeSwap &&
               tabs.filter(
@@ -1153,6 +1154,7 @@ function Home() {
               </p>
             )}
             {tabModeSwap && tabs.length === 0 && <AccountInfo />}          
+        </div>
         </div>
         {/* {userData?.EMPL_NO === 'NHU1903' && <div className="chatroom">
           <CHAT />

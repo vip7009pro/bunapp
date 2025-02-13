@@ -212,6 +212,7 @@ const EQ_STATUS = () => {
               .filter((element: string, index: number) => element === machine)
               .map((ele_series: string, index: number) => {
                 return (
+                  <div className="animated_div">
                   <div id='machinediv' className='FRlist' key={index}>
                     {eq_status
                       .filter(
@@ -300,6 +301,7 @@ const EQ_STATUS = () => {
                           }
                         }
                       })}
+                  </div>
                   </div>
                 );
               })}
