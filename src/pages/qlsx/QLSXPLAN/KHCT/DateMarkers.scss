@@ -1,0 +1,39 @@
+.machine-timeline-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+
+.date-markers {
+  display: flex;
+  width: fit-content;
+  height: 30px;
+  background-color: #87a1e9;
+}
+.date-marker {
+  width: 15px;
+  border-left: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.date-marker span {
+  font-size: 12px;
+  color: #333;
+  position: absolute;
+  bottom: -20px;
+}
+.plan-block {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+.plan-content {
+  padding-left: 10px;
+  color: white;
+  font-size: 12px;
+}
